@@ -1,0 +1,54 @@
+@use "../settings/variables";
+
+.header__nav {
+  display: flex;
+}
+
+.menu__toggle {
+display: none;
+}
+
+.nav__element {
+  padding: 0 26px;
+}
+
+li {
+list-style: none;
+}
+
+.nav__element:last-child {
+  padding-right: 0;
+}
+
+.nav__link {
+  color: variables.$color-grey;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  padding: 28px 18px 22px;
+  border-bottom: 4px solid transparent;
+  letter-spacing: 0.1875rem;
+}
+
+.nav__link:hover {
+  color: variables.$color-black;
+  border-color: variables.$color-primary;
+}
+
+@media screen and (width < 600px) {
+.menu__icon {
+display: inline-block;
+padding: 4px 8px;
+border: 1px solid grey;
+border-radius: 4px;
+background: white;
+}
+.header__nav {
+display: none;
+list-style: none;
+}
+
+.menu__toggle ~ .header__nav {
+display: block;
+}
+}

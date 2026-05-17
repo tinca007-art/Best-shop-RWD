@@ -1,0 +1,21 @@
+@use "../settings/variables";
+
+.logo {
+  font-family: variables.$font-raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  color: variables.$color-primary;
+}
+
+.header {
+  height: 70px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+

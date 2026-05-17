@@ -1,0 +1,28 @@
+@use "../settings/variables";
+
+.btn {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 16px 65px;
+  border-radius: variables.$radius;
+  border: none;
+}
+
+.btn--primary {
+  background: variables.$color-primary;
+  border-radius: variables.$radius;
+  box-shadow: 3px 10px 14px variables.$shadow;
+}
+
+.btn--redish {
+  background-color: variables.$color-red;
+}
+
+.btn--green {
+  background-color: variables.$color-green;
+}
+
+.btn--large {
+  padding: 22px 155px;
+}

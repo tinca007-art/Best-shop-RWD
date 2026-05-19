@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BestShop</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext" rel="stylesheet"/>
   <link rel="stylesheet" href="scss/settings/_reset.scss">
   <link rel="stylesheet" href="scss/main.scss">
@@ -16,14 +16,20 @@
 <header class="header">
   <div class="header__container container">
     <a href="#" class="logo">BestShop</a>
-    <nav>
-        <input id="toggle" class="menu__toggle" type="checkbox">
-        <label for="toggle" class="menu__icon"><i class="fa-solid fa-bars"></i></label>
+    <nav class="nav__menu">
+        <input id="menu__toggle" class="menu__toggle" type="checkbox">
+        <label for="menu__toggle" class="menu__icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        </label>
+
+
       <ul class="header__nav">
-        <li class="nav__element"><a href="#why-us" class="nav__link">Why us</a></li>
-        <li class="nav__element"><a href="#benefits" class="nav__link">Benefits</a></li>
-        <li class="nav__element"><a href="#prices" class="nav__link">Prices</a></li>
-        <li class="nav__element"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__element"><a href="#" class="nav__link">Why us</a></li>
+        <li class="nav__element"><a href="#" class="nav__link">Benefits</a></li>
+        <li class="nav__element"><a href="#" class="nav__link">Prices</a></li>
+        <li class="nav__element"><a href="#" class="nav__link">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -35,7 +41,7 @@
     <div class="opening__content">
       <h1 class="opening__header">Sell More!</h1>
       <p class="opening__heading">Open shop on our platform and increase your sales</p>
-      <a href="#" class="btn btn--primary btn--large">Open your shop</a>
+      <a href="#" class="btn--large">Open your shop</a>
     </div>
     <img src="./scss/images/Background.png" alt="" class="opening__image">
   </section>
@@ -228,7 +234,7 @@
             </p>
           </label>
         </div>
-        <button type="submit" class="btn btn--primary">Send</button>
+        <button type="submit" class="btn--form">Send</button>
       </form>
     </div>
   </section>

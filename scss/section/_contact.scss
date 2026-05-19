@@ -1,13 +1,15 @@
 @use "../settings/variables";
 
 .contact {
-  padding: 80px 100px 100px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .contact__column {
-  width: 50%;
+  width: 100%;
 }
 
 .contact__title {
@@ -23,9 +25,11 @@
 
 .contact__details {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   color: variables.$color-grey;
-  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
 }
 
 .details__item {
@@ -119,10 +123,15 @@
   line-height: 17px;
 }
 
-.form .btn {
-  font-size: 0.8125rem;
-  padding: 20px 97px;
-  align-self: flex-end;
-  margin-top: 20px;
-  cursor: pointer;
+@media screen and (width > 800px) {
+
+.contact {
+  padding:100px 100px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contact__details {
+flex-direction: row;
+}
 }

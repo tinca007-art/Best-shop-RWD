@@ -1,10 +1,70 @@
 @use "../settings/variables";
 
+
+.menu__toggle {
+display: none;
+position: absolute;
+top: -999px;
+left: -999px;
+opacity: 0;
+}
+
+.menu__icon {
+    display: block;
+
+    span {
+    width: 30px;
+    height: 4px;
+    display: block;
+    margin-bottom: 5px;
+    background: variables.$color-primary;
+
+    &:last-child {
+    margin-bottom: 0;
+    }
+    }
+  
+}
+
+.header__nav {
+display: none;
+list-style: none;
+background: white;
+padding: 0;
+}
+.menu__toggle:checked ~ .header__nav {
+display: flex;
+flex-direction: column;
+width: 100vw;
+
+.nav__element {
+border-bottom: none;
+}
+}
+
+.nav__element {
+border-bottom: 1px solid silver;
+}
+
+.nav__link {
+    display: block;
+padding: 0.5em 1em;
+text-decoration: none;
+color: variables.$color-grey;
+
+&:hover {
+color: black;
+}
+}
+
+
+
+@media screen and (width > 1352px) {  
 .header__nav {
   display: flex;
 }
 
-.menu__toggle {
+.menu__icon {
 display: none;
 }
 
@@ -34,21 +94,6 @@ list-style: none;
   color: variables.$color-black;
   border-color: variables.$color-primary;
 }
-
-@media screen and (width < 600px) {
-.menu__icon {
-display: inline-block;
-padding: 4px 8px;
-border: 1px solid grey;
-border-radius: 4px;
-background: white;
-}
-.header__nav {
-display: none;
-list-style: none;
 }
 
-.menu__toggle ~ .header__nav {
-display: block;
-}
-}
+

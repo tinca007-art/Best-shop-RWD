@@ -55,7 +55,7 @@ list-style: none;
 }
 
 .pricing__items {
-  text-align: center;
+  text-align: left;
   }
 
 .pricing__item {
@@ -69,18 +69,13 @@ list-style: none;
   content: "";
   width: 11px;
   height: 11px;
-  border: 1px solid variables.$color-green;
-  margin-right: 10px;
+  margin-right: 20px;
   display: inline-block;
-  background-image: url("../images/Checkmark-1.svg");
+  background-image: url("../../images/Checkmark-2.svg");
 }
 
 .pricing__item--not::before {
-  width: 11px;
-  height: 11px;
-  display: inline-block;
-  border: 1px solid red;
-  background-image: url("../images/Close.svg");
+  background-image: url("../../images/Close.svg");
 }
 
 .pricing__box--basic {
@@ -134,6 +129,6 @@ align-items: center;
 }
 
 .pricing__details {
-margin-left: 0;
+margin-inline: auto;
 }
 }

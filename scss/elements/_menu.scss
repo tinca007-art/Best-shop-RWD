@@ -31,14 +31,20 @@ display: none;
 list-style: none;
 background: white;
 padding: 0;
+position: absolute;
+top: 100%;
+left: 0;
 }
 .menu__toggle:checked ~ .header__nav {
 display: flex;
 flex-direction: column;
-width: 100vw;
+width: 100%;
+padding-top: 20px;
+box-shadow: 0 3px 6px rgba(0,0,0,.16);
 
 .nav__element {
 border-bottom: none;
+width: 100%;
 }
 }
 
@@ -48,9 +54,13 @@ border-bottom: 1px solid silver;
 
 .nav__link {
     display: block;
-padding: 0.5em 1em;
+padding: 1em 1em;
 text-decoration: none;
-color: variables.$color-grey;
+ color: variables.$color-grey;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  line-height: 2em;
 
 &:hover {
 color: black;
@@ -62,6 +72,7 @@ color: black;
 @media screen and (width > 1352px) {  
 .header__nav {
   display: flex;
+  position: static;
 }
 
 .menu__icon {
@@ -81,10 +92,6 @@ list-style: none;
 }
 
 .nav__link {
-  color: variables.$color-grey;
-  font-weight: 700;
-  font-size: 0.6875rem;
-  text-transform: uppercase;
   padding: 28px 18px 22px;
   border-bottom: 4px solid transparent;
   letter-spacing: 0.1875rem;
